@@ -1,0 +1,30 @@
+{
+  "name": "Tweepic",
+  "version": "1.0",
+  "description": "The Tweepic Chrome extension. Tweet your instagram pictures.",
+  "background": {
+      "scripts": [ "background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    { "matches": ["http://*/*"],
+     "js": ["jquery.min.js", "content_script.js"] }
+  ],
+  "page_action" :
+  {
+    "default_icon" : "icon-19.png",
+    "default_title" : "Tweepic",
+      "default_popup" : "popup.html"
+  },
+  "permissions" : [
+    "declarativeContent",
+      "activeTab",
+      "clipboardWrite"
+  ],
+  "icons" : {
+      "19" : "icon-19.png",
+            "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "manifest_version": 2
+}
