@@ -1,7 +1,7 @@
 {
-  "name": "Tweepic",
+  "name": "Shortlink Finder",
   "version": "1.0",
-  "description": "The Tweepic Chrome extension. Tweet your instagram pictures.",
+  "description": "Displays an icon if the current page has an official shortlink and makes it easy to copy!",
   "background": {
       "scripts": [ "background.js"],
     "persistent": false
@@ -13,7 +13,7 @@
   "page_action" :
   {
     "default_icon" : "icon-19.png",
-    "default_title" : "Tweepic",
+    "default_title" : "Get Shortlink",
       "default_popup" : "popup.html"
   },
   "permissions" : [
