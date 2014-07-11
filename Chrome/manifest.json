@@ -1,13 +1,13 @@
 {
   "name": "Shortlink Finder",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Displays an icon if the current page has an official shortlink and makes it easy to copy!",
   "background": {
       "scripts": [ "background.js"],
     "persistent": false
   },
   "content_scripts": [
-    { "matches": ["http://*/*"],
+    { "matches": ["<all_urls>"],
      "js": ["jquery.min.js", "content_script.js"] }
   ],
   "page_action" :
